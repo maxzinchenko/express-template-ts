@@ -2,10 +2,10 @@ import 'dotenv/config';
 import express, { RequestHandler, Router } from 'express';
 import { urlencoded, json } from 'body-parser'
 
-import { SERVER_PORT } from './constants'
+import { SERVER_PORT } from './src/constants'
 
-import { Server } from './server';
-import { StatusRoute } from './routes';
+import { Server } from './src/server';
+import { StatusRoute } from './src/routes';
 
 const app = express();
 const router = Router();

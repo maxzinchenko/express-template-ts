@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { BaseController } from '.';
+import { BaseController } from './index';
 import { StatusService } from '../services';
 
 export class StatusController extends BaseController {
