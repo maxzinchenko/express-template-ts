@@ -1,0 +1,30 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "Max Zinchenko",
+    "url": "https://github.com/maxzinchenko"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.ts",
+  "scripts": {
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "start:dev": "cross-env NODE_ENV=development ts-node index.ts --watch",
+    "start:prod": "cross-env NODE_ENV=production node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "pg": "8.5.1",
+    "typeorm": "0.2.30"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.11",
+    "@types/node": "14.14.22",
+    "cross-env": "7.0.3",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.2"
+  }
+}
